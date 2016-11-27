@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.otimus.radioapp.ListActivity"
+    >
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rec"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="#EEE"
+    android:id="@+id/view">
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/kantipur"
+            android:id="@+id/list_logo"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/list_id"
+            android:layout_alignTop="@+id/list_logo"
+            android:layout_toRightOf="@+id/list_logo"
+            android:layout_toEndOf="@+id/list_logo" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:tint="@color/colorAccent"
+            android:background="@drawable/round_border"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/list_play" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingTop="6dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio Kantipur"
+            android:id="@+id/list_name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_alignTop="@+id/list_id"
+            android:layout_toRightOf="@+id/list_id"
+            android:layout_toEndOf="@+id/list_id" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="96.1"
+            android:id="@+id/list_frequency"
+            android:layout_below="@+id/list_name"
+            android:layout_alignLeft="@+id/list_name"
+            android:layout_alignStart="@+id/list_name" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
